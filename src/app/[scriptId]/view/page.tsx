@@ -16,7 +16,9 @@ export default async function Page({
       <Box mt="s">
         <BackButton />
       </Box>
-      <ViewScript script={script} />
+      <Box mb="xxl">
+        <ViewScript script={script} />
+      </Box>
     </PageWidthContainer>
   );
 }

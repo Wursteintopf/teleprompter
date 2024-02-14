@@ -20,7 +20,9 @@ export default async function Page({
       <Box mt="m" mb="m">
         <Typography variant="h4">Edit Script</Typography>
       </Box>
-      <EditScriptForm script={script} />
+      <Box mb="xxl">
+        <EditScriptForm script={script} />
+      </Box>
     </PageWidthContainer>
   );
 }
