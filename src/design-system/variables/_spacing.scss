@@ -1,0 +1,28 @@
+// Spacing
+$spacing-xs: 5px;
+$spacing-s: 10px;
+$spacing-m: 20px;
+$spacing-l: 30px;
+$spacing-xl: 40px;
+$spacing-xxl: 60px;
+
+$spacings: (
+  "xs": $spacing-xs,
+  "s": $spacing-s,
+  "m": $spacing-m,
+  "l": $spacing-l,
+  "xl": $spacing-xl,
+  "xxl": $spacing-xxl,
+);
+
+$page-width: 1000px;
+
+// Export some variables to reuse them in JS
+:export {
+  spacingXs: $spacing-xs;
+  spacingS: $spacing-s;
+  spacingM: $spacing-m;
+  spacingL: $spacing-l;
+  spacingXl: $spacing-xl;
+  spacingXxl: $spacing-xxl;
+}

@@ -1,0 +1,10 @@
+@import "@/design-system/variables.module.scss";
+
+.pageWidthContainer {
+  margin: 0 auto;
+  width: $page-width;
+
+  @include desktop {
+    width: 94vw;
+  }
+}

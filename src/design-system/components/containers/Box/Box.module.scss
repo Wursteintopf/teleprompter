@@ -1,0 +1,21 @@
+@import "@/design-system/variables.module.scss";
+
+@each $name, $size in $spacings {
+  @each $dir in $directions {
+    .margin-#{$dir}-#{$name} {
+      margin-#{$dir}: $size;
+    }
+  }
+}
+
+@each $name, $size in $spacings {
+  @each $dir in $directions {
+    .padding-#{$dir}-#{$name} {
+      padding-#{$dir}: $size;
+    }
+  }
+}
+
+.fitContent {
+  width: fit-content;
+}

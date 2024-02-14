@@ -1,0 +1,9 @@
+@import "@/design-system/variables.module.scss";
+
+.viewScriptContainer {
+  white-space: pre-wrap;
+}
+
+.flipped {
+  transform: scaleX(-1);
+}

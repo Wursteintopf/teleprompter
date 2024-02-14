@@ -1,0 +1,67 @@
+@import "@/design-system/variables.module.scss";
+
+.flex {
+  display: flex;
+}
+
+.alignItems-center {
+  align-items: center;
+}
+
+.alignItems-flex-start {
+  align-items: flex-start;
+}
+
+.alignItems-flex-end {
+  align-items: flex-end;
+}
+
+.justifyContent-center {
+  justify-content: center;
+}
+
+.justifyContent-flex-start {
+  justify-content: flex-start;
+}
+
+.justifyContent-flex-end {
+  justify-content: flex-end;
+}
+
+.justifyContent-space-between {
+  justify-content: space-between;
+}
+
+.justifyContent-space-around {
+  justify-content: space-around;
+}
+
+.justifyContent-space-evenly {
+  justify-content: space-evenly;
+}
+
+.flexDirection-row {
+  flex-direction: row;
+}
+
+.flexDirection-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flexDirection-column {
+  flex-direction: column;
+}
+
+.flexDirection-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+@each $name, $size in $spacings {
+  .gap-#{$name} {
+    gap: $size;
+  }
+}

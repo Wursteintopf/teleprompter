@@ -1,0 +1,8 @@
+@import "@/design-system/variables.module.scss";
+
+.textAreaStyle {
+  background-color: $black;
+  color: $white;
+  padding: $spacing-m;
+  border-radius: 5px;
+}

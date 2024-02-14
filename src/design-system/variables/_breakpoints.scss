@@ -1,0 +1,33 @@
+// Breakpoints
+$breakpoint-xl: 1400px;
+$breakpoint-desktop: 1000px;
+$breakpoint-tablet: 800px;
+$breakpoint-mobile: 600px;
+$breakpoint-very-small: 400px;
+
+// Media queries
+@mixin xl {
+  @media screen and (max-width: $breakpoint-xl) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+@mixin very-small {
+  @media screen and (max-width: $breakpoint-very-small) {
+    @content;
+  }
+}

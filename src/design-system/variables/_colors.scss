@@ -1,0 +1,11 @@
+// Main Colors
+$white: #ffffff;
+$black: #000000;
+$darkGrey: #222222;
+
+// Export some variables to reuse them in JS
+:export {
+  white: $white;
+  black: $black;
+  darkGrey: $darkGrey;
+}
