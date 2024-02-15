@@ -4,6 +4,7 @@ import { Flex } from "@/design-system/components/containers/Flex/Flex";
 import { PageWidthContainer } from "@/design-system/components/containers/PageWidthContainer/PageWidthContainer";
 import { IconButton, Typography } from "@mui/material";
 import EditIcon from "@mui/icons-material/Edit";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { AddScriptButton } from "@/components/AddScriptButton/AddScriptButton";
 import Link from "next/link";
@@ -38,29 +39,35 @@ export default async function Page() {
         direction="column"
       >
         {scripts.map((s, index) => (
-          <Link
-            style={{ width: "100%" }}
-            href={`/${s.id}/view`}
+          <Card
             key={`Script-${index}`}
+            width="100%"
+            pt="m"
+            pr="m"
+            pl="m"
+            pb="m"
           >
-            <Card width="100%" pt="m" pr="m" pl="m" pb="m">
-              <Flex alignItems="center" justifyContent="space-between">
-                {s.name ?? <i>Unnamed Script</i>}
-                <Flex gap="s">
-                  <Link href={`/${s.id}/edit`}>
-                    <IconButton>
-                      <EditIcon />
-                    </IconButton>
-                  </Link>
-                  <Link href={`/${s.id}/delete`}>
-                    <IconButton>
-                      <DeleteIcon />
-                    </IconButton>
-                  </Link>
-                </Flex>
+            <Flex alignItems="center" justifyContent="space-between">
+              {s.name ?? <i>Unnamed Script</i>}
+              <Flex gap="s">
+                <Link href={`/${s.id}/view`}>
+                  <IconButton>
+                    <VisibilityIcon />
+                  </IconButton>
+                </Link>
+                <Link href={`/${s.id}/edit`}>
+                  <IconButton>
+                    <EditIcon />
+                  </IconButton>
+                </Link>
+                <Link href={`/${s.id}/delete`}>
+                  <IconButton>
+                    <DeleteIcon />
+                  </IconButton>
+                </Link>
               </Flex>
-            </Card>
-          </Link>
+            </Flex>
+          </Card>
         ))}
       </Flex>
     </PageWidthContainer>
